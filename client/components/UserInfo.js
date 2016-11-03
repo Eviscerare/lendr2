@@ -20,7 +20,7 @@ class Browse extends Component {
           />
       )
     }
-    const tilesLent = tiles.filter(t => { return this.props.state.username === this.props.state.tileData[t.props.tileId].ownername && !!this.props.state.tileData[t.props.tileId].ownername})
+    const tilesLent = tiles.filter(t => { return this.props.state.username === this.props.state.tileData[t.props.tileId].ownername && !!this.props.state.tileData[t.props.tileId].lendee})
     const tilesBorrowed = tiles.filter(t => { return this.props.state.username === this.props.state.tileData[t.props.tileId].lendee })
     
     return (
